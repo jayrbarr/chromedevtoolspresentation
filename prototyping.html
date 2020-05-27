@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Prototyping CSS</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="prototyping.css">
+    <script src="index.js"></script>
+  </head>
+  <body>
+    <header>
+      <h1>Prototyping CSS</h1>
+    </header>
+    <main>
+      <section id="basics">
+        <h2>Prototyping basics</h2>
+        <p>Make Me Italic!</p>
+      </section>
+      <section id="autocomplete">
+        <h2>Autocomplete by value</h2>
+        <p>Make Me Bold & Italic!</p>
+      </section>
+      <section id="highlight">
+        <h2>Highlight all elements</h2>
+        <style>
+          #highlightmargin li {
+            margin-left: 10px;
+          }
+        </style>
+        <ul id="highlightmargin">
+          <li>Don't change my margin-left!</li>
+          <li id="justthisone">Change my margin-left!</li>
+          <li>Don't change my margin-left!</li>
+        </ul>
+      </section>
+      <section id="pseudo">
+        <h2>Pseudo-classes</h2>
+        <ol>
+          <li>Go to <b>Styles</b> pane</li>
+          <li>Click <b>:hov</b> button</li>
+        </ol>
+        <button>Hover Over Me!</button>
+      </section>
+      <section id="classes">
+        <h2>Classes</h2>
+        <ol>
+          <li>Go to <b>Styles</b> pane</li>
+          <li>Click <b>.cls</b> button</li>
+        </ol>
+        <div class="themedark">Hello I Am Dark Theme</div>
+        <div>I Aspire To Dark Theme</div>
+      </section>
+    </main>
+    <footer>
+      <p>
+        Next: <a href="debuggingjs.html">Debugging JavaScript</a>
+      </p>
+    </footer>
+  </body>
+</html>

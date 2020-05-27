@@ -1,0 +1,101 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Benton Sans", "Helvetica Neue", helvetica, arial, sans-serif;
+  margin: 2em;
+}
+
+h1 {
+  font-style: italic;
+  color: navy;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+kbd {
+  list-style: none;
+  list-style-type: decimal;
+  font: inherit;
+  vertical-align: baseline;
+  box-sizing: inherit;
+  display: inline-block;
+  margin: 0 .1em;
+  padding: .1em .6em;
+  font-size: 11px;
+  line-height: 1.4;
+  color: #242729;
+  text-shadow: 0 1px 0 #FFF;
+  background-color: #e1e3e5;
+  border: 1px solid #adb3b9;
+  border-radius: 3px;
+  box-shadow: 0 1px 0 rgba(12,13,14,0.2),0 0 0 2px #FFF inset;
+  white-space: nowrap;
+}
+
+p {
+  max-width: 600px;
+}
+
+form {
+  margin-bottom: 25px;
+  padding: 15px;
+  background-color: cyan;
+  display: inline-block;
+  width: 100%;
+  max-width: 340px;
+  border-radius: 3px;
+}
+
+input {
+  display: block;
+  margin-bottom: 10px;
+  padding: 5px;
+  width: 100%;
+  border: 1px solid lightgrey;
+  border-radius: 3px;
+  font-size: 16px;
+}
+
+button {
+  font-size: 16px;
+  border-radius: 3px;
+  background-color: lightgrey;
+  border: 1px solid grey;
+  box-shadow: 2px 2px teal;
+  cursor: pointer;
+  margin-right: 1em;
+  margin-bottom: 1em;
+}
+
+button:hover {
+  background-color: yellow;
+}
+
+button:active {
+  box-shadow: none;
+}
+
+ol ul, ul ul, ul ol {
+  margin-top: 5px;
+}
+
+li {
+  margin-bottom: 5px;
+}
+
+footer {
+  padding-top: 25px;
+  border-top: 1px solid lightgrey;
+}
+
+.hidden {
+  display: none;
+}
+
+section {
+  margin-bottom: 2em;
+}

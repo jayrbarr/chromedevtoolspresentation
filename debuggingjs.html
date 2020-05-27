@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Debugging JavaScript</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="index.css">
+    <script src="index.js"></script>
+  </head>
+  <body>
+    <header>
+      <h1>Debugging JavaScript</h1>
+    </header>
+    <main>
+      <section id="shortcuts">
+        <h2>Console shortcuts</h2>
+        <ul>
+          <li>
+            Open DevTools and jump to <b>Console</b>
+            <ul>
+              <li><kbd>Control</kbd>+<kbd>Shift</kbd>+<kbd>J</kbd></li>
+              <li><kbd>Command</kbd>+<kbd>Option</kbd>+<kbd>J</kbd> (Mac)</li>
+            </ul>
+          </li>
+          <li>
+            Open the <b>Console</b> in the <b>Drawer</b>
+            <ul>
+              <li><kbd>Escape</kbd></li>
+            </ul>
+          </li>
+        </ul>
+      </section>
+      <section id="sources">
+        <h2 id="randomcolor">Debugging with Sources panel</h2>
+        <button id="debugger">Colorfy H2</button>
+        <script>
+          window.addEventListener('load', () => {
+            let colors = [];
+            document.querySelector('#debugger').addEventListener('click', function onClick() {
+              const rgb = () => {
+                const value = () => Math.floor(Math.random() * 256);
+                const r = value();
+                const g = value();
+                const b = value();
+                return {r, g, b};
+              };
+              debugger;
+              const target = document.querySelector('#randomcolor');
+              const color = rgb();
+              target.style.color = `rgb(${color.r}, ${color.g}, ${color.b})`;
+              colors.push(color);
+            });
+          });
+        </script>
+      </section>
+    </main>
+    <footer>
+      <p>
+        Next: <a href="performance.html">Analyzing load performance</a>
+      </p>
+    </footer>
+  </body>
+</html>

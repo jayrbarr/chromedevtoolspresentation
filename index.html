@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>CSS in Chrome DevTools</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="debugging.css">
+    <script src="index.js"></script>
+  </head>
+  <body>
+    <input type="hidden">
+    <header>
+      <h1>Troubleshooting CSS</h1>
+    </header>
+    <main>
+      <section id="inspectelement">
+        <h2>Inspect Element</h2>
+        <ul>
+          <li>Right-click &gt; <b>Inspect</b></li>
+        </ul>
+        <div>Inspect Me!</div>
+      </section>
+      <section id="docking">
+        <h2>Command Menu & Docking</h2>
+        <ol>
+          <li>
+            Open the <b>Command Menu</b>
+            <ul>
+              <li><kbd>Control</kbd>+<kbd>Shift</kbd>+<kbd>P</kbd></li>
+              <li><kbd>Command</kbd>+<kbd>Shift</kbd>+<kbd>P</kbd> (Mac)</li>
+            </ul>
+          </li>
+          
+          <li>Run the <b>Dock To Bottom</b>, <b>Dock To Right</b>, or <b>Undock Into Separate Window</b> command</li>
+        </ol>
+      </section>
+      <section id="styles">
+        <h2>The <b>Styles</b> pane</h2>
+        <ol>
+          <li>Select element in the <b>DOM Tree</b> to view its CSS in the <b>Styles</b> pane</li>
+          <li>Filter as needed</li>
+        </ol>
+        <p>
+          Shows <b>all</b> CSS declarations for the selected element.</a>.
+        </p>
+        <style>
+          #cascade {
+            color: red;
+            animation-delay: 0s;
+            opacity: 1;
+            border-color: brown;
+            background-color: fuchsia;
+            caret-color: yellow;
+          }
+        </style>
+        <div>
+          <span id="cascade" style="color:black;caret-color:orange;background-color:turquoise">Debug My Background Color</span>
+        </div>
+      </section>
+      <section id="tooltip">
+        <h2>Detailed Tooltip in <b>Inspect Mode</b></h2>
+        <ul>
+          <li>Click <b>Inspect Mode</b> button</li>
+          <li><kbd>Control</kbd>+<kbd>Shift</kbd>+<kbd>C</kbd> or <kbd>Command</kbd>+<kbd>Shift</kbd>+<kbd>C</kbd> (Mac)</li>
+        </ul>
+      </section>
+    </main>
+    <footer>
+      <p>
+        Next: <a href="prototyping.html">Prototyping CSS</a>
+      </p>
+    </footer>
+  </body>
+</html>
